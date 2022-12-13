@@ -102,6 +102,8 @@ int main(void)
   conf.Pull = GPIO_NOPULL;
   conf.Speed = GPIO_SPEED_FREQ_MEDIUM;
   HAL_GPIO_Init(GPIOE, &conf);
+
+  mems_init(MEMS_ACC_DATARATE_10HZ, MEMS_ACC_FULLSCALE_2G);
   /* USER CODE END 2 */
 
   /* Infinite loop */
